@@ -1,0 +1,69 @@
+name: quitwithhelp
+options:
+  bundleIdPrefix: com.quitwithhelp
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: "12.0.0"
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: GM4SGZMSPY
+    SWIFT_VERSION: "5.0"
+    GENERATE_INFOPLIST_FILE: YES
+    TARGETED_DEVICE_FAMILY: "1,2"
+targets:
+  quitwithhelp:
+    type: application
+    platform: iOS
+    sources:
+      - Shared
+      - App
+    entitlements:
+      path: App/quitwithhelp.entitlements
+      properties:
+        com.apple.developer.applesignin:
+          - Default
+        com.apple.security.application-groups:
+          - group.com.quitwithhelp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.quitwithhelp
+        INFOPLIST_KEY_CFBundleDisplayName: "Quit With Help"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+    dependencies:
+      - target: quitwithhelpWidget
+      - package: Firebase
+        product: FirebaseCore
+      - package: Firebase
+        product: FirebaseAuth
+      - package: Firebase
+        product: FirebaseFirestore
+  quitwithhelpWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Shared
+      - Widget
+    entitlements:
+      path: Widget/quitwithhelpWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.quitwithhelp
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: "Quit With Help"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.quitwithhelp.widget
+        GENERATE_INFOPLIST_FILE: NO
