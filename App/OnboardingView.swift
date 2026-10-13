@@ -10,6 +10,8 @@ struct OnboardingView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Spacer()
 
+                Image("Logo").resizable().scaledToFit().frame(width: 72, height: 72)
+                    .padding(.bottom, 14)
                 Text("Quit With Help")
                     .font(.round(40, .heavy))
                     .foregroundStyle(QW.text)

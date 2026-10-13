@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0882FED688B3A0E3AA15DD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E007FB6B90A99FCA798C084C /* Assets.xcassets */; };
 		221423CACBAE70ED462550B2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017BEBF31FCCC8B54AD891FD /* Theme.swift */; };
 		28FE3E48643A28EABE2BF643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404F1D5FCD6DF2EF7650D1D /* HomeView.swift */; };
 		2EF1F097DA2B352EB8FCED41 /* ACStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B13115D27E20CADBB49E36 /* ACStore.swift */; };
@@ -78,6 +79,7 @@
 		93FC69B7A519E6D4E877B531 /* ACountableWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACountableWidget.swift; sourceTree = "<group>"; };
 		989F0061979FCD78DE0584D9 /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStore.swift; sourceTree = "<group>"; };
 		BA3A6776E9FB2E06BAE54234 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		E007FB6B90A99FCA798C084C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2053E99DF49782E5668EB8 /* ACModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			children = (
 				677B6465FB1BE64CD27F1A28 /* ACountableApp.swift */,
 				1246CD5ADFE6318A0AC9327F /* AddHabitView.swift */,
+				E007FB6B90A99FCA798C084C /* Assets.xcassets */,
 				2520E10270045474A2163AE3 /* DemoMode.swift */,
 				7142705C67430EBB4CA793BB /* FriendsView.swift */,
 				2135B16500E464A54BF13B19 /* GoogleService-Info.plist */,
@@ -254,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0882FED688B3A0E3AA15DD34 /* Assets.xcassets in Resources */,
 				D95AD03A3F830A1DBEAE6582 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

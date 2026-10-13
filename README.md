@@ -1,3 +1,5 @@
+<img src="docs/logo.png" width="96" alt="Quit With Help icon">
+
 # Quit With Help
 
 An iPhone app for quitting bad habits and building good ones, with friends who

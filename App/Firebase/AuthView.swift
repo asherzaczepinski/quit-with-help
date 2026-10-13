@@ -14,6 +14,7 @@ struct AuthView: View {
             ScrollView {
                 VStack(spacing: 18) {
                     VStack(spacing: 10) {
+                        Image("Logo").resizable().scaledToFit().frame(width: 96, height: 96)
                         Text("Quit With Help").font(.round(34, .heavy)).foregroundStyle(QW.accent)
                     }
                     .padding(.top, 44)
